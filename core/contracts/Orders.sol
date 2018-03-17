@@ -32,11 +32,67 @@ contract Order {
         buyer = _buyer;
     }
 
+    function getSeller() public view returns (address) {
+        return seller;
+    }
+
+    function setSeller(address _seller) public {
+        seller = _seller;
+    }
+
     function getName() public view returns (string) {
         return name;
     }
 
     function setName(string _name) public {
         name = _name;
+    }
+
+    function getSerialNumber() public view returns (string) {
+        return serialNumber;
+    }
+
+    function setSerialNumber(string _serialNumber) public {
+        serialNumber = _serialNumber;
+    }
+
+    function getTimestamp() public view returns (uint256) {
+        return timestamp;
+    }
+
+    function setTimestamp(uint256 _timestamp) public {
+        timestamp = _timestamp;
+    }
+
+    function getWarrantyMilliseconds1() public view returns (uint) {
+        return warrantyMilliseconds1;
+    }
+
+    function setWarrantyMilliseconds1(uint _warrantyMilliseconds1) public {
+        warrantyMilliseconds1 = _warrantyMilliseconds1;
+    }
+
+    function getWarrantyMilliseconds2() public view returns (uint) {
+        return warrantyMilliseconds2;
+    }
+
+    function setWarrantyMilliseconds2(uint _warrantyMilliseconds2) public {
+        warrantyMilliseconds2 = _warrantyMilliseconds2;
+    }
+
+    function getStatus() public view returns (uint) {
+        return status;
+    }
+
+    function setStatus(uint _status) public {
+        status = _status;
+    }
+
+    function getAmount() public view returns (uint) {
+        return amount;
+    }
+
+    function setAmount(uint _amount) public {
+        amount = _amount;
     }
 }
