@@ -1,6 +1,6 @@
 pragma solidity ^0.4.17;
-contract Order {
 
+contract Order {
     address private buyer;
     address private seller;
     string private name;
