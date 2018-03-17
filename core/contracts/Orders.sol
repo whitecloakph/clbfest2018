@@ -1,98 +1,100 @@
 pragma solidity ^0.4.17;
 
 contract Order {
-    address private buyer;
-    address private seller;
-    string private name;
-    string private serialNumber;
-    uint256 private timestamp;
-    uint private warrantyMilliseconds1;
-    uint private warrantyMilliseconds2;
-    uint private status;
-    uint private amount;
+  address private buyer;
+  address private seller;
+  string private name;
+  string private serialNumber;
+  uint256 private timestamp;
+  uint private warrantyMilliseconds1;
+  uint private warrantyMilliseconds2;
+  uint private status;
+  uint private amount;
 
-    function Order(address _buyer, address _seller, string _name, string _serialNumber, uint256 _timestamp,
-            uint _warrantyMilliseconds1, uint _warrantyMilliseconds2, uint _status, uint _amount) public {
-        buyer = _buyer;
-        seller = _seller;
-        name = _name;
-        serialNumber = _serialNumber;
-        timestamp = _timestamp;
-        warrantyMilliseconds1 = _warrantyMilliseconds1;
-        warrantyMilliseconds2 = _warrantyMilliseconds2;
-        status = _status;
-        amount = _amount;
-    }
-    
-    function getBuyer() public view returns (address) {
-        return buyer;
-    }
+  /*
+     function Order(address _buyer, address _seller, string _name, string _serialNumber, uint256 _timestamp,
+     uint _warrantyMilliseconds1, uint _warrantyMilliseconds2, uint _status, uint _amount) public {
+     buyer = _buyer;
+     seller = _seller;
+     name = _name;
+     serialNumber = _serialNumber;
+     timestamp = _timestamp;
+     warrantyMilliseconds1 = _warrantyMilliseconds1;
+     warrantyMilliseconds2 = _warrantyMilliseconds2;
+     status = _status;
+     amount = _amount;
+     }
+   */
 
-    function setBuyer(address _buyer) public {
-        buyer = _buyer;
-    }
+  function getBuyer() public view returns (address) {
+    return buyer;
+  }
 
-    function getSeller() public view returns (address) {
-        return seller;
-    }
+  function setBuyer(address _buyer) public {
+    buyer = _buyer;
+  }
 
-    function setSeller(address _seller) public {
-        seller = _seller;
-    }
+  function getSeller() public view returns (address) {
+    return seller;
+  }
 
-    function getName() public view returns (string) {
-        return name;
-    }
+  function setSeller(address _seller) public {
+    seller = _seller;
+  }
 
-    function setName(string _name) public {
-        name = _name;
-    }
+  function getName() public view returns (string) {
+    return name;
+  }
 
-    function getSerialNumber() public view returns (string) {
-        return serialNumber;
-    }
+  function setName(string _name) public {
+    name = _name;
+  }
 
-    function setSerialNumber(string _serialNumber) public {
-        serialNumber = _serialNumber;
-    }
+  function getSerialNumber() public view returns (string) {
+    return serialNumber;
+  }
 
-    function getTimestamp() public view returns (uint256) {
-        return timestamp;
-    }
+  function setSerialNumber(string _serialNumber) public {
+    serialNumber = _serialNumber;
+  }
 
-    function setTimestamp(uint256 _timestamp) public {
-        timestamp = _timestamp;
-    }
+  function getTimestamp() public view returns (uint256) {
+    return timestamp;
+  }
 
-    function getWarrantyMilliseconds1() public view returns (uint) {
-        return warrantyMilliseconds1;
-    }
+  function setTimestamp(uint256 _timestamp) public {
+    timestamp = _timestamp;
+  }
 
-    function setWarrantyMilliseconds1(uint _warrantyMilliseconds1) public {
-        warrantyMilliseconds1 = _warrantyMilliseconds1;
-    }
+  function getWarrantyMilliseconds1() public view returns (uint) {
+    return warrantyMilliseconds1;
+  }
 
-    function getWarrantyMilliseconds2() public view returns (uint) {
-        return warrantyMilliseconds2;
-    }
+  function setWarrantyMilliseconds1(uint _warrantyMilliseconds1) public {
+    warrantyMilliseconds1 = _warrantyMilliseconds1;
+  }
 
-    function setWarrantyMilliseconds2(uint _warrantyMilliseconds2) public {
-        warrantyMilliseconds2 = _warrantyMilliseconds2;
-    }
+  function getWarrantyMilliseconds2() public view returns (uint) {
+    return warrantyMilliseconds2;
+  }
 
-    function getStatus() public view returns (uint) {
-        return status;
-    }
+  function setWarrantyMilliseconds2(uint _warrantyMilliseconds2) public {
+    warrantyMilliseconds2 = _warrantyMilliseconds2;
+  }
 
-    function setStatus(uint _status) public {
-        status = _status;
-    }
+  function getStatus() public view returns (uint) {
+    return status;
+  }
 
-    function getAmount() public view returns (uint) {
-        return amount;
-    }
+  function setStatus(uint _status) public {
+    status = _status;
+  }
 
-    function setAmount(uint _amount) public {
-        amount = _amount;
-    }
+  function getAmount() public view returns (uint) {
+    return amount;
+  }
+
+  function setAmount(uint _amount) public {
+    amount = _amount;
+  }
 }

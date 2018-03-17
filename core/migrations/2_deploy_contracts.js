@@ -1,4 +1,4 @@
-var Orders = artifacts.require("./Orders.sol");
+var Orders = artifacts.require("./Order.sol");
 
 module.exports = function(deployer) {
   deployer.deploy(Orders);
