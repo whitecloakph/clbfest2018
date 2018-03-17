@@ -11,7 +11,7 @@ contract Order {
     uint private status;
     uint private amount;
 
-    function Order(address _buyer, address _seller, string _name, string _serialNumber, uint256 _timestamp
+    function Order(address _buyer, address _seller, string _name, string _serialNumber, uint256 _timestamp,
             uint _warrantyMilliseconds1, uint _warrantyMilliseconds2, uint _status, uint _amount) public {
         buyer = _buyer;
         seller = _seller;
@@ -24,12 +24,12 @@ contract Order {
         amount = _amount;
     }
     
-    function getBuyer() public view returns (string) {
+    function getBuyer() public view returns (address) {
         return buyer;
     }
 
-    function setName(string _name) public {
-        name = _name;
+    function setBuyer(address _buyer) public {
+        buyer = _buyer;
     }
 
     function getName() public view returns (string) {
