@@ -11,6 +11,7 @@ contract Adres {
     string name;
     string description;
     string serial;
+    string images; // comma separated
   }
 
   event ProductCreated();
@@ -21,11 +22,12 @@ contract Adres {
       return products.length;
   }
 
-  function createProduct(string _name, string _description, string _serial) public {
+  function createProduct(string _name, string _description, string _serial, string _images) public {
     products.push(Product({
       name: _name,
       description: _description,
-      serial: _serial
+      serial: _serial,
+      images: _images
     }));
     ProductCreated();
   }
@@ -60,6 +62,7 @@ contract Adres {
   struct Dispute {
     uint amount;
     string message;
+    string images; // comma separated
   }
 
   event DisputeCreated();
@@ -70,10 +73,11 @@ contract Adres {
       return disputes.length;
   }
 
-  function createDispute(uint _amount, string _message) public {
+  function createDispute(uint _amount, string _message, string _images) public {
     disputes.push(Dispute({
       amount: _amount,
-      message: _message
+      message: _message,
+      images: _images
     }));
     DisputeCreated();
   }
