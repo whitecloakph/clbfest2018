@@ -6,6 +6,6 @@ import "../contracts/Adres.sol";
 
 contract TestAdres {
   function shouldBeEqual() public {
-    Assert.equal(1, 1, "1 == 1");
+    Assert.equal(uint(1), uint(1), "1 == 1");
   }
 }

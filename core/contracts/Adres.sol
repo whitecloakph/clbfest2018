@@ -15,7 +15,11 @@ contract Adres {
 
   event ProductCreated();
 
-  Product[] private products;
+  Product[] public products;
+
+  function getProductsLength() public view returns (uint) {
+      return products.length;
+  }
 
   function createProduct(string _name, string _description, string _serial) public {
     products.push(Product({
@@ -36,7 +40,11 @@ contract Adres {
 
   event OrderCreated();
 
-  Order[] private orders;
+  Order[] public orders;
+
+  function getOrdersLength() public view returns (uint) {
+      return orders.length;
+  }
 
   function createOrder(address _buyer, address _seller, uint _amount) public {
     orders.push(Order({
@@ -56,7 +64,11 @@ contract Adres {
 
   event DisputeCreated();
 
-  Dispute[] private disputes;
+  Dispute[] public disputes;
+
+  function getDisputesLength() public view returns (uint) {
+      return disputes.length;
+  }
 
   function createDispute(uint _amount, string _message) public {
     disputes.push(Dispute({
