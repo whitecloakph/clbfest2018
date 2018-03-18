@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/buyer_bg">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:text="Donna Rios"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_minimal"
+            app:layout_constraintBottom_toBottomOf="@id/profile_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/profile_img" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:src="@drawable/m_payne"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <View
+            app:layout_constraintBottom_toBottomOf="@+id/bottom_guide"
+            android:id="@+id/product_bg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_huge"
+            android:background="@drawable/rounded_corners_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_img" />
+
+        <TextView
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large"
+            app:layout_constraintEnd_toEndOf="@id/product_bg"
+            app:layout_constraintTop_toTopOf="@id/product_bg"
+            android:paddingStart="@dimen/padding_medium"
+            android:paddingEnd="0dp"
+            android:gravity="center"
+            android:text="NEW"
+            android:textColor="@color/white"
+            android:background="@drawable/blue_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_marginStart="@dimen/margin_huge"
+            android:layout_marginEnd="@dimen/margin_huge"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            app:layout_constraintEnd_toEndOf="@+id/product_bg"
+            app:layout_constraintStart_toStartOf="@+id/product_bg"
+            app:layout_constraintTop_toTopOf="@id/product_bg" />
+
+        <TextView
+            android:textSize="@dimen/text_size_title"
+            android:id="@+id/product_name"
+            android:textColor="@color/black"
+            android:text="DJI SPARK"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:textSize="@dimen/text_size_headline"
+            android:layout_marginTop="@dimen/margin_large"
+            android:textColor="@color/black"
+            android:text="$799"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:lineSpacingExtra="2dp"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_minimal"
+            android:id="@+id/product_verify_advisory"
+            android:layout_marginTop="@dimen/margin_large"
+            android:textColor="@color/black"
+            android:text="Start using ADres Smart Contract. Verify your item by taking photos. The Seller have set a 24 hour limit to verify your purchase"
+            app:layout_constraintStart_toStartOf="@id/product_bg"
+            app:layout_constraintEnd_toEndOf="@id/product_bg"
+            app:layout_constraintTop_toBottomOf="@+id/product_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/vjew_adres"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_large"
+            android:paddingTop="@dimen/padding_drawable"
+            android:paddingStart="@dimen/padding_xlarge"
+            android:paddingEnd="@dimen/padding_xlarge"
+            android:paddingBottom="@dimen/padding_drawable"
+            android:background="@drawable/rounded_corner_transp_blue_stroke"
+            android:textColor="@color/blue"
+            android:text="VIEW ADRes"
+            app:layout_constraintStart_toStartOf="@+id/product_verify_advisory"
+            app:layout_constraintTop_toBottomOf="@+id/product_verify_advisory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/validate_now"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:paddingTop="@dimen/padding_drawable"
+            android:paddingStart="@dimen/padding_large"
+            android:paddingEnd="@dimen/padding_large"
+            android:paddingBottom="@dimen/padding_drawable"
+            android:background="@drawable/rounded_corner_blue"
+            android:textColor="@color/white"
+            android:text="VALIDATE NOW"
+            app:layout_constraintEnd_toEndOf="@+id/product_verify_advisory"
+            app:layout_constraintTop_toBottomOf="@+id/product_verify_advisory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginTop="@dimen/margin_huge"
+            app:layout_constraintTop_toBottomOf="@+id/validate_now"
+            android:id="@+id/bottom_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/purchased_items_label"
+            android:layout_marginTop="@dimen/margin_large"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/margin_large"
+            app:layout_constraintTop_toBottomOf="@+id/product_bg"
+            android:textColor="@color/black"
+            android:text="PURCHASED ITEMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.view.ViewPager
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/purchased_items_viewpager"
+            app:layout_constraintTop_toBottomOf="@+id/purchased_items_label"
+            android:layout_width="0dp"
+            android:layout_height="500dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

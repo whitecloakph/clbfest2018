@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/buyer_bg">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/back_icon"
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="14dp"
+            app:layout_constraintStart_toEndOf="@+id/back_button"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="VALIDATE ITEM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_marginTop="@dimen/margin_huge"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_title"
+            android:layout_marginStart="@dimen/margin_large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/back_button"
+            android:text="DJI Spark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_title"
+            android:layout_marginEnd="@dimen/margin_large"
+            app:layout_constraintTop_toTopOf="@+id/product_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="$799"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/product_image_view_pager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/margin_large"
+            app:layout_constraintTop_toBottomOf="@id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:id="@+id/photo_advisory"
+            android:textSize="@dimen/text_size_minimal"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:text="Match the required photos on each frame. Completing this task will activate you ADRes contact with your seller.
+
+Make sure you have decent lighting and clear, quality images."
+            android:layout_marginTop="@dimen/margin_large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_image_view_pager"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/gray"
+            android:id="@+id/divider"
+            android:layout_marginTop="@dimen/margin_large"
+            app:layout_constraintTop_toBottomOf="@+id/photo_advisory"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/validate_features"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            android:textColor="@color/black"
+            android:text="VALIDATE FEATURES"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/validate_features"
+            android:id="@+id/features_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/gray"
+            android:id="@+id/divider2"
+            android:layout_marginTop="@dimen/margin_large"
+            app:layout_constraintTop_toBottomOf="@+id/features_list"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:id="@+id/dispute_advisory"
+            app:layout_constraintTop_toBottomOf="@+id/divider2"
+            android:layout_marginTop="@dimen/margin_large"
+            android:textColor="@color/black"
+            android:text="If you're satisfied with the item, tap VERIFY. If you wish to dispute the item, tap DISPUTE."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/vjew_adres"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_large"
+            android:paddingTop="@dimen/padding_drawable"
+            android:paddingStart="@dimen/padding_xlarge"
+            android:paddingEnd="@dimen/padding_xlarge"
+            android:paddingBottom="@dimen/padding_drawable"
+            android:background="@drawable/rounded_corner_transp_blue_stroke"
+            android:textColor="@color/blue"
+            android:text="DISPUTE ITEM"
+            app:layout_constraintStart_toStartOf="@+id/dispute_advisory"
+            app:layout_constraintTop_toBottomOf="@+id/dispute_advisory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/validate_now"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:paddingTop="@dimen/padding_drawable"
+            android:paddingStart="@dimen/padding_large"
+            android:paddingEnd="@dimen/padding_large"
+            android:paddingBottom="@dimen/padding_drawable"
+            android:background="@drawable/rounded_corner_blue"
+            android:textColor="@color/white"
+            android:text="VERIFY ITEM"
+            app:layout_constraintEnd_toEndOf="@+id/dispute_advisory"
+            app:layout_constraintTop_toBottomOf="@+id/dispute_advisory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

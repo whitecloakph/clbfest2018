@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DRApp</string>
+    <string name="info">Info</string>
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="intro_message">
+        <![CDATA[
+            This sample demonstrates the basic use of Camera2 API. Check the source code to see how
+            you can display camera preview and take pictures.
+        ]]>
+    </string>
+    <string name="launch_camera">Launch Camera</string>
+    <string name="items_all_caps">ITEMS</string>
+</resources>
