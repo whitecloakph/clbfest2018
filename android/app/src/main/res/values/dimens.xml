@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MATERIAL STYLE DIMENSIONS AS NOTED IN MATERIAL GUIDELINES -->
+    <!-- http://www.google.com/design/spec/patterns/scrolling-techniques.html -->
+    <dimen name="action_bar_height">56dp</dimen>
+    <!-- carefully calculated height based on background image size -->
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="tab_width">80dp</dimen>
+    <dimen name="navigation_drawer_width">280dp</dimen>
+    <dimen name="max_width">320dp</dimen>
+    <dimen name="end_navigation_drawer_width">@dimen/max_width</dimen>
+    <!-- deprecated because incorrect - should be renamed to min_clickable_size -->
+    <dimen name="listPreferredItemHeight">48dp</dimen>
+    <!-- according to https://www.google.com/design/spec/layout/metrics-keylines.html#metrics-keylines-keylines-spacing -->
+    <dimen name="list_item_height">72dp</dimen>
+    <dimen name="clickable_min_size">48dp</dimen>
+
+    <!-- Button material dimensions copied from android sdk start -->
+    <!-- Default insets (outer padding) around controls -->
+    <dimen name="control_inset_material">4dp</dimen>
+    <!-- Default insets (outer padding) around buttons -->
+    <dimen name="button_inset_vertical_material">0dp</dimen>
+    <dimen name="button_inset_horizontal_material">@dimen/control_inset_material</dimen>
+    <!-- Default inner padding within controls -->
+    <dimen name="control_padding_material">4dp</dimen>
+    <!-- Default inner padding within buttons -->
+    <dimen name="button_padding_vertical_material">@dimen/control_padding_material</dimen>
+    <dimen name="button_padding_horizontal_material">8dp</dimen>
+    <!-- Button material dimensions copied from android sdk end -->
+
+    <!-- text sizes -->
+    <dimen name="text_size_minimal">12sp</dimen>
+    <dimen name="text_size_secondary">14sp</dimen>
+    <dimen name="text_size_primary">16sp</dimen>
+    <dimen name="text_size_title">20sp</dimen>
+    <dimen name="text_size_headline">24sp</dimen>
+    <dimen name="text_size_maximum">32sp</dimen>
+    <dimen name="text_size_tertiary">@dimen/text_size_minimal</dimen>
+
+    <!-- other dimensions -->
+    <!-- these three magic values should be change only together-->
+    <!-- These changes also break racing exotic buttons -->
+    <dimen name="header_with_background_height">64dp</dimen>
+    <dimen name="default_elevation">2dp</dimen>
+    <dimen name="app_bar_layout_height">158dp</dimen>
+    <dimen name="toolbar_overlap_top_default">78dp</dimen>
+    <dimen name="toolbar_overlap_top_sport">48dp</dimen>
+    <dimen name="toolbar_hamburger_menu_badge">16dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="listPreferredItemHeightDoubled">96dp</dimen>
+    <dimen name="card_view_margin">0dp</dimen>
+    <dimen name="card_view_vertical_margin">4dp</dimen>
+    <dimen name="card_view_default_elevation">4dp</dimen>
+    <dimen name="card_view_left_marker_line_width">4dp</dimen>
+
+    <dimen name="action_button_mini_size">40dp</dimen>
+    <dimen name="action_button_default_size">56dp</dimen>
+    <dimen name="action_button_maxi_size">70dp</dimen>
+
+    <dimen name="signup_label_width">130dp</dimen>
+    <dimen name="button_corner_radius">2dp</dimen>
+    <dimen name="floating_button_corner_radius">@dimen/button_corner_radius</dimen>
+    <dimen name="button_stroke">1dp</dimen>
+    <dimen name="cells_corner_radius">4dp</dimen>
+    <dimen name="placedbets_corner_radius">6dp</dimen>
+    <dimen name="regular_box_size">60dp</dimen>
+    <dimen name="regular_box_size_ico">44dp</dimen>
+    <dimen name="chink_width">50dp</dimen>
+    <dimen name="price_box_width">80dp</dimen>
+    <dimen name="price_box_height">22dp</dimen>
+    <dimen name="price_box_outline">1dp</dimen>
+
+    <dimen name="countdown_button_tablet_width">70dp</dimen>
+    <dimen name="countdown_button_tablet_height">45dp</dimen>
+
+    <dimen name="tablet_race_multiples_card_minheight">190dp</dimen>
+    <dimen name="tablet_race_multiples_drawer_handle_height">38dp</dimen>
+
+    <dimen name="tablet_sidemenu_width">300dp</dimen>
+    <dimen name="tablet_sub_header_height">66dp</dimen>
+
+    <dimen name="tablet_competitor_cell_price_width">@dimen/max_width</dimen>
+    <dimen name="tablet_bet_selector_tab_height">38dp</dimen>
+    <dimen name="tablet_fluc_price_width">40sp</dimen>
+    <dimen name="tablet_fluc_price_width_sum">80sp</dimen>
+
+    <dimen name="form_toggle_size">25dp</dimen>
+    <dimen name="form_toggle_inner_size">5dp</dimen>
+    <dimen name="form_toggle_checkmark_position">8dp</dimen>
+
+    <dimen name="sport_button_minwidth">80dp</dimen>
+    <dimen name="sport_button_minwidth_6_or_more">60dp</dimen>
+    <dimen name="sport_button_live_minwidth">110dp</dimen>
+    <dimen name="sport_button_live_minwidth_6_or_more">90dp</dimen>
+
+    <dimen name="buttonsLayoutOutlineWidth">@dimen/price_box_outline</dimen>
+
+    <dimen name="bs_winplace_button_width">52dp</dimen>
+    <dimen name="bs_winplace_button_height">45dp</dimen>
+
+    <dimen name="rm_button_height">48dp</dimen>
+    <dimen name="rm_button_width">64dp</dimen>
+    <dimen name="rm_button_margin">2dp</dimen>
+    <dimen name="rm_filter_button_padding">5dp</dimen>
+
+    <dimen name="bs_exoticmode_button_height">18dp</dimen>
+
+    <dimen name="buttonsLayoutMarginRight">4dp</dimen>
+    <dimen name="buttonsLayoutMarginLeft">4dp</dimen>
+    <dimen name="buttonsLayoutOuterPadding">0dp</dimen>
+    <dimen name="buttonsLayoutButtonsSidesPadding">0dp</dimen>
+    <dimen name="buttonsLayoutButtonHeight">@dimen/clickable_min_size</dimen>
+    <dimen name="buttonsLayoutButtonMinWidth">200dp</dimen>
+    <dimen name="buttonsLayoutButtonMaxWidth">0dp</dimen>
+
+    <dimen name="simpleFragmentHeadingHeight">40dp</dimen>
+
+    <dimen name="standard_margin">5dp</dimen>
+
+    <dimen name="outer_margin_left">5dp</dimen>
+    <dimen name="outer_margin_right">5dp</dimen>
+    <dimen name="outer_margin_top">5dp</dimen>
+    <dimen name="outer_margin_bottom">5dp</dimen>
+
+    <dimen name="home_content_margin_top">10dp</dimen>
+    <dimen name="home_content_margin_middle">10dp</dimen>
+    <dimen name="home_content_margin_bottom">10dp</dimen>
+
+    <dimen name="extra_tablet_home_button_height">70dp</dimen>
+
+    <dimen name="separator_shadow_height">4dp</dimen>
+
+    <dimen name="list_cell_padding_zero">0dp</dimen>
+    <dimen name="list_cell_padding_half">4dp</dimen>
+    <dimen name="list_cell_padding">8dp</dimen>
+    <dimen name="list_cell_padding_three_quarters">12dp</dimen>
+    <!-- according to https://www.google.com/design/spec/layout/metrics-keylines.html#metrics-keylines-keylines-spacing -->
+    <dimen name="list_cell_padding_full">16dp</dimen>
+    <dimen name="list_cell_icon_drawable_padding">8dp</dimen>
+    <dimen name="list_cell_icon_padding">28dp</dimen>
+
+    <!-- according to https://www.google.com/design/spec/layout/metrics-keylines.html#metrics-keylines-keylines-spacing -->
+    <dimen name="list_content_left_margin">72dp</dimen>
+
+    <!-- according to https://www.google.com/design/spec/components/dialogs.html#dialogs-specs -->
+    <dimen name="dialog_content_padding">24dp</dimen>
+
+    <!-- Input Stake Screen -->
+    <dimen name="input_stake_edit_text_width">90dp</dimen>
+    <dimen name="input_stake_button_width">64dp</dimen>
+    <dimen name="input_stake_button_height">48dp</dimen>
+
+    <!-- Races screen -->
+    <dimen name="race_number_button_size">48dp</dimen>
+    <dimen name="race_venue_width">160dp</dimen>
+
+    <dimen name="competitor_price_button_margin">2dp</dimen>
+    <dimen name="competitor_price_button_margin_left_right">4dp</dimen>
+    <dimen name="competitor_price_button_width">56dp</dimen>
+    <dimen name="competitor_price_button_height">48dp</dimen>
+    <!-- 1.9x the price button width -->
+    <dimen name="competitor_scratched_without_width">106dp</dimen>
+
+    <!-- Insets not working before lollipop - so we do the same with margins -->
+    <dimen name="competitor_price_pre_lollipop_margin">4dp</dimen>
+
+    <dimen name="hot_streak_button_height">48dp</dimen>
+    <dimen name="hot_streak_button_width">56dp</dimen>
+
+    <!-- Animations -->
+    <integer name="button_state_fade_duration">100</integer>
+    <integer name="animation_duration">250</integer>
+    <integer name="transition_animation_duration">200</integer>
+    <integer name="transition_animation_duration_half">100</integer>
+
+    <!-- BetSlip -->
+    <dimen name="betslip_button_width">156dp</dimen>
+
+    <!-- BetSlip Price Pump-->
+    <dimen name="betslip_price_pump_button_default_width">172dp</dimen>
+    <dimen name="betslip_price_pump_popup_width">280dp</dimen>
+
+    <!-- Additional increase in size of floating button, so we could count it runtime -->
+    <dimen name="betslip_quick_deposit_button_additional_height">16dp</dimen>
+
+    <!-- CreditCardSelector -->
+    <item name="card_number_spacing" format="float" type="dimen">0.8</item>
+    <item name="list_card_number_spacing" format="float" type="dimen">1.1</item>
+    <dimen name="card_selector_popup_height">274dp</dimen>
+    <dimen name="card_selector_popup_width">238dp</dimen>
+    <dimen name="card_selector_popup_dy">-70dp</dimen>
+    <dimen name="card_selector_popup_dx">-12dp</dimen>
+    <dimen name="card_fields_padding">10dp</dimen>
+    <dimen name="card_inner_padding">6dp</dimen>
+
+    <!-- Keyboard -->
+    <dimen name="keyboard_action_button_margin">4dp</dimen>
+    <dimen name="icon_size">28dp</dimen>
+
+    <!-- Menus -->
+    <dimen name="menu_item_minheight">56dp</dimen>
+
+    <!-- User dropdown menu -->
+    <dimen name="user_dropdown_menu_elevation">6dp</dimen>
+    <dimen name="user_dropdown_menu_dy">-16dp</dimen>
+    <dimen name="user_dropdown_menu_width">230dp</dimen>
+
+    <!-- Live bet screen (In-Play) -->
+    <dimen name="live_bet_keyboard_height">297dp</dimen>
+
+    <!-- RaceEvent screen -->
+    <dimen name="race_event_header_height">90dp</dimen>
+    <dimen name="race_event_header_full_height">130dp</dimen>
+    <dimen name="race_event_header_bottom_text_height">34dp</dimen>
+    <dimen name="race_event_race_number_size">48dp</dimen>
+    <dimen name="race_event_race_number_padding">4dp</dimen>
+    <dimen name="race_event_derived_head_to_head_button_height">64dp</dimen>
+    <dimen name="race_event_derived_head_to_head_button_width">108dp</dimen>
+
+    <!-- RaceEvent form -->
+    <dimen name="race_event_form_padding">22dp</dimen>
+    <dimen name="race_event_form_text_size">13sp</dimen>
+    <dimen name="race_event_form_text_spacing">12dp</dimen>
+    <dimen name="race_event_form_header_spacing">6dp</dimen>
+    <dimen name="race_event_form_lines_stroke">1dp</dimen>
+    <dimen name="race_event_form_lines_padding">2dp</dimen>
+    <dimen name="race_event_form_inner_padding">12dp</dimen>
+    <dimen name="race_event_form_info_margin">32dp</dimen>
+    <dimen name="race_event_form_triangle_height">8dp</dimen>
+    <dimen name="race_event_form_triangle_width">16dp</dimen>
+    <dimen name="race_event_form_triangle_padding_left">0dp</dimen>
+
+    <!-- Race Competitor View Holder -->
+    <dimen name="exotic_checkbox_rover_height">74dp</dimen>
+    <dimen name="exotic_checkbox_boxed_height">62dp</dimen>
+    <dimen name="exotic_checkbox_boxed_drawable_pad">4dp</dimen>
+    <dimen name="exotic_checkbox_boxed_top_pad">12dp</dimen>
+    <dimen name="exotic_checkbox_boxed_bottom_pad">6dp</dimen>
+    <dimen name="exotic_checkbox_boxed_field_pad">14dp</dimen>
+    <dimen name="exotic_checkbox_boxed_margin">4dp</dimen>
+
+    <dimen name="background_extra_touch_space_padding">4dp</dimen>
+    <dimen name="race_event_results_data_table_text_size">12sp</dimen>
+    <dimen name="race_event_derived_market_action_area_width">470dp</dimen>
+    <dimen name="race_event_derived_market_action_area_width_with_margin">476dp</dimen>
+    <dimen name="race_event_derived_market_action_area_width_with_margin_and_space">498dp</dimen>
+
+    <dimen name="sport_event_cards_elevation">2dp</dimen>
+
+    <!-- Sport screens -->
+    <dimen name="sport_price_button_width">80dp</dimen>
+    <dimen name="sport_price_button_height">38dp</dimen>
+
+    <!--Challenge screens -->
+    <dimen name="challenge_race_distance_min_width">80dp</dimen>
+
+    <!-- Login screen -->
+    <dimen name="login_screen_width">@dimen/max_width</dimen>
+    <dimen name="login_screen_height">280dp</dimen>
+
+    <dimen name="padding_xsmall">2dp</dimen>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <!--Used for drawables inside textView-->
+    <dimen name="padding_drawable">12dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_xlarge">24dp</dimen>
+    <dimen name="padding_huge">32dp</dimen>
+    <!-- min clickable item height + paddding medium * 2 = 48 + 8 + 8  -->
+    <dimen name="padding_floating_button">64dp</dimen>
+
+    <dimen name="margin_xsmall">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_material_edit_text">12dp</dimen>
+    <dimen name="margin_map_fragment_button">12dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_mega">24dp</dimen>
+    <dimen name="margin_huge">32dp</dimen>
+    <dimen name="margin_viewpager">4dp</dimen>
+
+    <!-- button have inset of 4dp on left and right and 6dp on bottom and top - we need 16dp everywhere -->
+    <dimen name="margin_button_left_right">12dp</dimen>
+    <dimen name="margin_button_bottom_top">10dp</dimen>
+
+    <dimen name="button_floating_size">56dp</dimen>
+    <dimen name="bottom_sheet_min_height">80dp</dimen>
+    <dimen name="button_floating_elevation">12dp</dimen>
+    <dimen name="button_height_extra_min">38dp</dimen>
+    <dimen name="button_min_min_height">40dp</dimen>
+    <dimen name="button_min_height">48dp</dimen>
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="button_min_width">48dp</dimen>
+    <dimen name="text_view_max_width">500dp</dimen>
+    <dimen name="elevation_above_buttons">6dp</dimen>
+
+    <dimen name="autocomplete_dropdown_height">150dp</dimen>
+    <dimen name="margin_default">2dp</dimen>
+    <dimen name="auto_lookup_button_textsize">12sp</dimen>
+    <dimen name="auto_lookup_loading_wheel_right_margin">6dp</dimen>
+
+    <!-- size of circle ahead of race event number when quaddie plus is enabled -->
+    <dimen name="race_event_number_overlay_size">22dp</dimen>
+    <dimen name="race_event_number_overlay_text_size">11sp</dimen>
+    <dimen name="vertical_indicator_width">4dp</dimen>
+    <dimen name="quick_bet_into_input_stake_width">120dp</dimen>
+    <dimen name="button_container_height">64dp</dimen>
+    <dimen name="tile_height">100dp</dimen>
+    <dimen name="tile_width">108dp</dimen>
+    <dimen name="dialog_title_height">52dp</dimen>
+
+    <!-- signup complete page-->
+    <dimen name="ic_success_big_top_margin">80dp</dimen>
+    <dimen name="signup_complete_welcome_msg_top_margin">20dp</dimen>
+    <dimen name="signup_complete_logo_image_top_margin">50dp</dimen>
+    <dimen name="signup_complete_welcome_msg_text_size">@dimen/text_size_headline</dimen>
+    <dimen name="popup_dialog_min_width">400dp</dimen>
+
+    <!-- Double Down -->
+    <dimen name="double_down_image_height">308dp</dimen>
+    <dimen name="double_down_silk_size">24dp</dimen>
+
+    <!-- Cash out dialog -->
+    <dimen name="cash_out_dialog_minimum_height">476dp</dimen>
+
+    <!-- Cash out intro -->
+    <dimen name="cash_out_intro_bottom_area_height">84dp</dimen>
+    <dimen name="cash_out_bullet_point_width">16dp</dimen>
+    <dimen name="status_bar_height">24dp</dimen>
+    <dimen name="button_text_min_width">160dp</dimen>
+
+    <!--Personal Promos-->
+    <dimen name="personal_promo_card_height">183dp</dimen>
+    <dimen name="promo_header_content_width">360dp</dimen>
+
+    <!-- TextView Highlight  -->
+    <dimen name="text_view_highlight_drawable_radius">12dp</dimen>
+    <dimen name="rewards_button_width">140dp</dimen>
+    <dimen name="rewards_text_maxwidth">160dp</dimen>
+</resources>
