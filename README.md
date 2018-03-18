@@ -17,3 +17,7 @@ For this purpose, ADReS utilizes 3D imaging to detect product condition upon rec
 # User Flow
 
 ![alt text](https://raw.githubusercontent.com/whitecloakph/clbfest2018/master/userflow/User%20Flow.png)
+
+# Business Model
+
+The business model is commission-based, where e-commerce sites pay a portion of their profit based on the total amount of products sold covered by ADReS. There will be no direct costs to C2C seller/buyer.
