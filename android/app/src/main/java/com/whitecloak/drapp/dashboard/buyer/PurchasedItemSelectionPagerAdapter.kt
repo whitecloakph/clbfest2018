@@ -3,7 +3,7 @@ package com.whitecloak.drapp.dashboard.buyer
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
-import com.whitecloak.drapp.dashboard.seller.Product
+import com.whitecloak.drapp.models.Product
 
 /**
  * Created by kimnicolemontano on 2018/03/18.

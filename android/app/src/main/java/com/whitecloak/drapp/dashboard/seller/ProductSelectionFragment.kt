@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.squareup.picasso.Picasso
 import com.whitecloak.drapp.R
 import com.whitecloak.drapp.camera.PRODUCT_IMAGE_PATH_KEY
+import com.whitecloak.drapp.models.Product
 import com.whitecloak.drapp.utils.notNull
 import kotlinx.android.synthetic.main.product_selection_display_layout.view.*
 

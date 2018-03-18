@@ -3,6 +3,7 @@ package com.whitecloak.drapp.dashboard.seller
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.whitecloak.drapp.R
+import com.whitecloak.drapp.models.Product
 import kotlinx.android.synthetic.main.seller_dashboard_layout.*
 
 /**
