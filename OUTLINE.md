@@ -66,6 +66,8 @@ Seller posts the product in eBay
     1. If in favor of buyer, “Buyer entitled to refund/replacement”
     1. If in favor of seller, “Buyer is not entitled to refund/replacement”
 
+
+## Overview
 We are at the Golden Age of consumer-to-consumer or C2C E-Commerce.  44.4% of respondents in a study had experience buying online and 53.9% of these respondents said that they had bought or sold something on their mobiles.
  
 However, there are difficulties in bringing up and resolving disputes arising from C2C E-commerce.  These difficulties include: the costly expenses associated with litigation, the length of time involved before a dispute may be resolved and the venue where the dispute will be brought especially in cross-border transactions.
