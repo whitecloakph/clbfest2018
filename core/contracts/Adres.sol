@@ -11,6 +11,7 @@ contract Adres {
     string name;
     string description;
     string serial;
+    string images; // comma separated
   }
 
   event ProductCreated();
@@ -21,11 +22,12 @@ contract Adres {
       return products.length;
   }
 
-  function createProduct(string _name, string _description, string _serial) public {
+  function createProduct(string _name, string _description, string _serial, string _images) public {
     products.push(Product({
       name: _name,
       description: _description,
-      serial: _serial
+      serial: _serial,
+      images: _images
     }));
     ProductCreated();
   }
