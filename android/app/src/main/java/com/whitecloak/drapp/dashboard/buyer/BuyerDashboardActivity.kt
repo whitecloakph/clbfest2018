@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.squareup.picasso.Picasso
 import com.whitecloak.drapp.R
-import com.whitecloak.drapp.dashboard.seller.Product
+import com.whitecloak.drapp.models.Product
 import kotlinx.android.synthetic.main.buyer_dashboard_layout.*
 
 /**
