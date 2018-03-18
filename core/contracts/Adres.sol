@@ -17,7 +17,7 @@ contract Adres {
 
   Product[] public products;
 
-  function getProductsLength() public returns (uint) {
+  function getProductsLength() public view returns (uint) {
       return products.length;
   }
 
@@ -42,7 +42,7 @@ contract Adres {
 
   Order[] public orders;
 
-  function getOrdersLength() public returns (uint) {
+  function getOrdersLength() public view returns (uint) {
       return orders.length;
   }
 
@@ -66,7 +66,7 @@ contract Adres {
 
   Dispute[] public disputes;
 
-  function getDisputesLength() public returns (uint) {
+  function getDisputesLength() public view returns (uint) {
       return disputes.length;
   }
 
