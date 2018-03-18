@@ -13,3 +13,7 @@ For a dispute to fall under the jurisdiction of ADReS, the value of the dispute 
 The specific types of disputes that ADReS is able to resolve by itself are those involving the distortion of the external features of the product, the product having a missing external component, a difference in the external features of the product being sold and the product received by the buyer, the product received by the buyer being counterfeit and the failure of the buyer to receive the item purchased.
  
 For this purpose, ADReS utilizes 3D imaging to detect product condition upon receipt by the buyer of the item and verifies the external features of the item as advertisedby the seller.  ADReS also integrates courier systems into its platform to utilize shipment data in the resolution of disputes.
+
+# User Flow
+
+![alt text](https://raw.githubusercontent.com/whitecloakph/clbfest2018/master/userflow/User%20Flow.png)
